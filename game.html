@@ -71,7 +71,7 @@ You opened the site in the babysitter jobs tab and found a few:
 0. [[Looking for a babysitter for a 5 year old daughter-&gt;Young Child Babysitter]]
 0. [[Looking for a babysitter for a 13 year old daughter-&gt;Theresa&#39;s Babysitter]]
 0. [[Looking for a babysitter for a 18 year old daughter-&gt;Adult Babysitter]]
-0. [[Looking for a baby sitter-&gt;&quot;Baby&quot; Sitter]]</tw-passagedata><tw-passagedata pid="3" name="Young Child Babysitter" tags="" position="3880,621" size="100,100">You thought: she is 5, how can a 5 year old girl be hard to babysit? You didn&#39;t even read what it said about the job, you just pressed &quot;accept the job&quot; and you made you way to the address.
+0. [[Looking for a baby sitter-&gt;Baby Sitter]]</tw-passagedata><tw-passagedata pid="3" name="Young Child Babysitter" tags="" position="3880,621" size="100,100">You thought: she is 5, how can a 5 year old girl be hard to babysit? You didn&#39;t even read what it said about the job, you just pressed &quot;accept the job&quot; and you made you way to the address.
 
 Once you arrived, you rang on the door and a woman opened it. You said that you took the job, she smiled and asked you:
 
@@ -200,7 +200,7 @@ Then you heard someone speaking to you.
 &quot;Well, no silly... my girlfriend! I think you would be cute and sexy that way! I also will give you $50.000 over what my mom gives you, so choose wisely, my love!&quot; Said Layla, as you choose:
 
 [[Be a nanny-&gt;The Nanny]]
-[[Be a girlfriend-&gt;The Girlfriend]]</tw-passagedata><tw-passagedata pid="10" name="&quot;Baby&quot; Sitter" tags="loser" position="4532.333333333333,159" size="100,100">Well it didn&#39;t say anything about what you&#39;d babysit it only said it was well paid, so you decided to go with that.
+[[Be a girlfriend-&gt;The Girlfriend]]</tw-passagedata><tw-passagedata pid="10" name="Baby Sitter" tags="loser" position="4532.333333333333,159" size="100,100">Well it didn&#39;t say anything about what you&#39;d babysit it only said it was well paid, so you decided to go with that.
 
 You pressed &quot;accept the job&quot; and made your way to the address.
 
@@ -1516,21 +1516,21 @@ Compiled, Twined and Revised by &lt;a href=&quot;https://www.patreon.com/leilaSt
 
 (if: (history:) contains &quot;Miss Fortune&quot;)[(replace: ?Actress7)[ [[Miss Fortune]] ]]
 (if: (history:) contains &quot;Real Miss Fortune&quot;)[(replace: ?Actress8)[ [[Miss Fortune-&gt;Real Miss Fortune]] ]]
-</tw-passagedata><tw-passagedata pid="97" name="Loser Endings" tags="" position="3812,3590" size="100,100">(if: (history:) contains &quot;\&quot;Baby\&quot; Sitter&quot;)[(replace: ?Loser1)[[[?????-&gt;&quot;Baby&quot; Sitter]]]]
+</tw-passagedata><tw-passagedata pid="97" name="Loser Endings" tags="" position="3812,3590" size="100,100">(if: (history:) contains &quot;\&quot;Baby\&quot; Sitter&quot;)[(replace: ?Loser1)[[[?????-&gt;Baby Sitter]]]]
 (if: (history:) contains &quot;Mom&#39;s Maid&quot;)[(replace: ?Loser2)[ [[Olivia-&gt;Mom&#39;s Maid]] ]]
 (if: (history:) contains &quot;Poopsie&quot;)[(replace: ?Loser3)[ [[Poopsie]] ]]</tw-passagedata><tw-passagedata pid="98" name="Cruise Endings" tags="" position="4292,3590" size="100,100">(if: (history:) contains &quot;Sailor&quot;)[(replace: ?Cruise1)[ [[Maria-&gt;Sailor]] ]]
 (if: (history:) contains &quot;Gym Instructor&quot;)[(replace: ?Cruise2)[ [[Stacy-&gt;Gym Instructor]] ]]
 (if: (history:) contains &quot;Showgirl&quot;)[(replace: ?Cruise3)[ [[Showgirl #14-&gt;Showgirl]] ]]
 
 (if: (history:) contains &quot;Survivor&quot;)[(replace: ?Fantasy1)[ [[Unnamed Bimbo-&gt;Survivor]] ]]
-(if: (history:) contains &quot;Fantasy&quot;)[(replace: ?Fantasy2)[ [[Azura, Queen of Garuzu-&gt;Fantasy]] ]]</tw-passagedata><tw-passagedata pid="99" name="Google Event Macro" tags="header" position="4151,1680.6666666666665" size="100,100">{
+(if: (history:) contains &quot;Fantasy&quot;)[(replace: ?Fantasy2)[ [[Azura, Queen of Garuzu-&gt;Fantasy]] ]]</tw-passagedata><tw-passagedata pid="99" name="Google Event Macro" tags="header" position="4152.666666666667,1678.9999999999998" size="100,100">{
 (set: $gtagPassage to (macro: [
 	(set: _passageName to (passage:)&#39;s  name)
 	(set: _passageTag to (passage:)&#39;s tags&#39;s 1st)
 	(output:)[(print: &quot;&lt;script type=\&quot;text/javascript\&quot;&gt;
 	gtag(&#39;event&#39;, &#39;twine_passage&#39;, {
-	    &#39;title&#39;: &#39;&quot; + _passageName + &quot;&#39;,
-		&#39;tag&#39;: &#39;&quot; + _passageTag + &quot;&#39;
+	    &#39;title&#39;: \&quot;&quot; + _passageName + &quot;\&quot;,
+		&#39;tag&#39;: \&quot;&quot; + _passageTag + &quot;\&quot;
 	});
 &lt;/script&gt;&quot;)]
 
